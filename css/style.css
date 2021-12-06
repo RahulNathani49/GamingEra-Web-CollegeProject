@@ -630,7 +630,8 @@
             right: 20px;
         }
         nav ul {
-            display: none;
+            opacity: 0;
+            height: 0;
         }
         footer {
             padding: 34px 23px;
@@ -772,7 +773,8 @@
         }
         /* NAV MOBILE HOVER  */
         .menu:hover~nav ul {
-            display: block;
+            height: auto;
+            opacity: 1;
             flex-direction: column;
         }
         .menu:hover~nav {
