@@ -17,17 +17,16 @@
 
     <!-- HEADER  -->
     <header>
-        <div class="menu">
+        <div class="menu" id="hamburger-icon" onclick="menurun()">
             <i class="fas fa-bars"></i>
         </div>
-        <nav>
+        <nav id="navpart">
             <div class="logo">
                 <img src="images/Gaming-Era-Logo-Final.png" alt="logo">
             </div>
-
-            <ul>
+            <ul id="links">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="active">Home</a>
                 </li>
                 <li>
                     <a href="events.html">Events</a>
@@ -36,7 +35,7 @@
                     <a href="pricing.html">Pricing</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="active">Contact us</a>
+                    <a href="contact.html">Contact us</a>
                 </li>
                 <li>
                     <div class="search">
@@ -152,6 +151,7 @@
         </ul>
 
     </footer>
+    <script src="js/script.js"></script>
     <!-- FOOTER END  -->
 </body>
 

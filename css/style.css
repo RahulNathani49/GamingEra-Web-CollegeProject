@@ -630,9 +630,7 @@
             right: 20px;
         }
         nav ul {
-            opacity: 0;
-            height: 0;
-            width: 0;
+            display: none;
         }
         footer {
             padding: 34px 23px;
@@ -773,16 +771,7 @@
             padding: 20px;
         }
         /* NAV MOBILE HOVER  */
-        .menu:hover~nav ul {
-            height: auto;
-            width: 80%;
-            opacity: 1;
-            flex-direction: column;
-        }
-        .menu:hover~nav {
-            flex-direction: column;
-        }
-        .menu:hover~nav ul li {
+        nav ul li {
             padding: 30px 0;
         }
         nav ul {
@@ -790,5 +779,10 @@
         }
         nav ul li {
             text-align: center;
+        }
+        .search {
+            width: 50px;
+            height: 50px;
+            margin: auto;
         }
     }
