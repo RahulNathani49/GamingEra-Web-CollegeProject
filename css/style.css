@@ -632,6 +632,7 @@
         nav ul {
             opacity: 0;
             height: 0;
+            width: 0;
         }
         footer {
             padding: 34px 23px;
@@ -774,6 +775,7 @@
         /* NAV MOBILE HOVER  */
         .menu:hover~nav ul {
             height: auto;
+            width: 80%;
             opacity: 1;
             flex-direction: column;
         }
