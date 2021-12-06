@@ -785,4 +785,7 @@
             height: 50px;
             margin: auto;
         }
+        #crossicon {
+            display: none;
+        }
     }
