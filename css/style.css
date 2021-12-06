@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-image: url(../images/game_features_bg.jpg);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* HEADER START  */
+
+header {
+    background-image: url(../images/header-bg.jpg);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav img {
+    width: 200px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.active {
+    background-color: #FF5917;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    transition: .4s all;
+    margin: 0 20px;
+}
+
+nav ul li a:hover {
+    background-color: #FF5917;
+    transition: .4s all;
+}
+
+.search {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: #343A40;
+}
+
+.menu {
+    display: none;
+}
+
+
+/* HEADER END  */
+
+
+/* HOME SECTION  */
+
+.home-bg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/landing_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.homesection {
+    display: flex;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.homesection h3 {
+    color: #FF5917;
+    font-size: 23px;
+    padding: 10px 20px;
+}
+
+.homesection h1 {
+    font-size: 40px;
+    padding: 10px 20px;
+}
+
+.content {
+    width: 50%;
+}
+
+.content p {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.content a {
+    background-image: url(../images/btn-bg.jpg);
+    background-attachment: fixed;
+    padding: 20px 20px;
+    background-size: cover;
+    border-radius: 30px;
+    color: white;
+    margin: 10px 20px;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+
+
+/* HOME SECTION END  */
+
+
+/* GAME BOOST   */
+
+.gameboost {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.title img {
+    width: 200px;
+}
+
+.title span {
+    color: #FF5917;
+}
+
+.boost-card {
+    width: 80%;
+    padding: 20px;
+    margin: 30px 0;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    background-image: url(../images/game_boost_bg.jpg);
+    background-size: cover;
+}
+
+.boostcard {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 50px 0;
+}
+
+.description h3:nth-child(2) {
+    color: #ff5817;
+    padding: 10px 0;
+}
+
+.icon {
+    font-size: 4rem;
+    padding: 0 30px;
+}
+
+
+/* GAME BOOST END  */
+
+
+/* IMAGE GALLERY  */
+
+.image-gallery {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.arrow {
+    background-color: #ff5817;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 2px black;
+    z-index: 1;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.image-grid img {
+    width: 100%;
+    transition: .4s all;
+}
+
+.image-grid img:hover {
+    filter: saturate(40%);
+    transition: .4s all;
+    cursor: pointer;
+}
+
+.img3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.title h1 {
+    font-size: 25px;
+}
+
+.img4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/* IMAGE GALLERY END  */
+
+
+/* POPULAR GAME  */
+
+.populargame {
+    text-align: center;
+    margin: 100px auto;
+    width: 80%;
+}
+
+.pcard1,
+.pcard2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+.popcard {
+    background-color: #272936;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.popcard img {
+    width: 100%;
+    border-top-right-radius: 40px;
+}
+
+.popcard h3 {
+    padding: 20px 0;
+}
+
+.popcard h3 span {
+    color: #ff5817;
+}
+
+
+/* POPULAR GAME END  */
+
+
+/* FOOTER  */
+
+footer {
+    display: flex;
+    padding: 30px 100px;
+    justify-content: space-between;
+    background-image: url(../images/footer_bg.jpg);
+    align-items: center;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 30px;
+}
+
+.copyright span {
+    color: #ff5817;
+}
+
+footer ul {
+    display: flex;
+}
+
+.sicon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    background-color: #292B3C;
+    text-align: center;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* FOOTER END  */
+
+.video-pricing {
+    padding: 100px 0;
+}
+
+.video-sec {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    padding: 30px;
+    text-align: center;
+}
+
+iframe {
+    margin: auto;
+}
+
+.video {
+    width: 500px;
+    margin: auto;
+}
+
+.title span {
+    padding: 0 10px;
+}
+
+th {
+    background-color: #5a5a68;
+}
+
+table {
+    padding: 20px;
+}
+
+.table-grid {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.title h1 {
+    padding: 20px;
+}
+
+iframe {
+    box-shadow: 1px 1px 20px 14px black;
+}
+
+td {
+    padding: 20px;
+    background-color: black;
+    transition: .4s all;
+}
+
+td:hover {
+    background-color: rgb(51, 48, 48);
+    cursor: pointer;
+    transition: .4s all;
+}
+
+td img {
+    float: left;
+    width: 100px;
+}
+
+.des {
+    float: left;
+    padding: 20px 10px;
+}
+
+table,
+td,
+tr,
+th {
+    border: none;
+}
+
+td h6 {
+    padding: 10px;
+    font-size: 14px;
+}
+
+td i {
+    padding: 10px;
+    color: #ff5817;
+}
+
+td p {
+    padding: 10px;
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    nav ul li a {
+        padding: 8px 13px;
+        margin: 0px 10px;
+    }
+    .content a {
+        padding: 10px 20px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .gameboost {
+        width: 100%;
+    }
+    .popcard {
+        margin: 10px;
+    }
+    .popcard span {
+        padding: 0 5px;
+    }
+    .sicon {
+        margin: 0px 8px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .menu {
+        display: block;
+        font-size: 40px;
+        color: white;
+    }
+    nav ul {
+        display: none;
+    }
+    footer {
+        padding: 34px 23px;
+    }
+    .content {
+        width: 100%;
+    }
+    .boostcard {
+        flex-direction: column;
+    }
+    .homesection {
+        width: 90%;
+    }
+    .content a {
+        padding: 14px;
+    }
+    .content h1 {
+        font-size: 25px;
+    }
+    .content h3 {
+        font-size: 20px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+    .sicon {
+        margin: 0;
+    }
+    .popcard {
+        margin: 20px;
+    }
+    .boost-card {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .description {
+        text-align: center;
+    }
+    .image-grid {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .img3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .pcard1,
+    .pcard2 {
+        flex-direction: column;
+    }
+    footer ul {
+        display: block;
+    }
+    .sicon {
+        margin: 10px 0;
+    }
+}
