@@ -369,7 +369,7 @@ iframe {
 }
 
 th {
-    background-color: #5a5a68;
+    background-color: #121213;
 }
 
 table {
@@ -388,6 +388,7 @@ table {
 
 iframe {
     box-shadow: 1px 1px 20px 14px black;
+    width: 500px;
 }
 
 td {
@@ -462,6 +463,9 @@ td p {
     .menu {
         display: none;
     }
+    .table-grid {
+        flex-direction: column;
+    }
 }
 
 
@@ -532,5 +536,32 @@ td p {
     }
     .sicon {
         margin: 10px 0;
+    }
+    .table-grid {
+        flex-direction: column;
+    }
+    .video {
+        height: 300px;
+        width: 300px;
+    }
+    table {
+        padding: 0;
+    }
+    .video {
+        height: 100%;
+        width: 100%;
+    }
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+    .table-grid {
+        width: 95%;
+    }
+    td i {
+        padding: 1px;
+    }
+    td {
+        padding: 5px;
     }
 }
